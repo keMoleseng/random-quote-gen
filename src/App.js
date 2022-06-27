@@ -100,8 +100,10 @@ function App() {
         <div className="btns--container">
           <span id="quote-logo">
             <a  id='tweet-quote'
-                      class='icon' 
-                      href='twitter.com/intent/tweet'
+                      className='icon' 
+                      rel='noreferrer'
+                      target="_blank"
+                      href={`https://twitter.com/intent/tweet?text=${quote}-${author}`}
                       style={styles}
               >
               <i class='fa-brands  fa-twitter'/>
